@@ -1,0 +1,207 @@
+/* Downloaded fonts from google/fonts */
+
+@font-face{
+font-family: font1;
+src: url(fonts/Comfortaa-Bold.ttf);
+}
+@font-face{
+font-family: font2;
+src: url(fonts/AdventPro-Regular.ttf);
+}
+@font-face{
+font-family: font3;
+src: url(fonts/Baumans-Regular.ttf);
+}
+@font-face{
+font-family: font4;
+src: url(fonts/BadScript-Regular.ttf);
+}
+@font-face{
+font-family: font5;
+src: url(fonts/Boogaloo-Regular.ttf);
+}
+@font-face{
+font-family: font6;
+src: url(fonts/CabinCondensed-Regular.ttf);
+}
+@font-face{
+font-family: font7;
+src: url(fonts/CherryCreamSoda.ttf);
+}
+@font-face{
+font-family: font8;
+src: url(fonts/Audiowide-Regular.ttf);
+}
+@font-face{
+font-family: font9;
+src: url(fonts/Limelight-Regular.ttf);
+}
+@font-face{
+font-family: font10;
+src: url(fonts/ProstoOne-Regular.ttf);
+}
+
+
+#banner{
+background-image:url(images/header.jpg);
+padding: .6%;
+
+}
+#title{
+color:#FF8C00;
+font-size:22px;
+font-family:font9;
+padding:2%;
+margin-top:2%;
+text-align:center;
+}
+body{
+font-size: 18px;
+font-family: font4;
+padding:0;
+margin:0;
+}
+#flexContainer {
+display: flex;
+background-image:url(images/Mainback.jpg);
+}
+#menu{
+background-image: url(images/back12.jpg);
+flex: 1 1 10%;
+min-width: 10%;
+margin: 0;
+padding: 1% 4% 1% 1%;
+text-align:center;
+}
+.main_content{
+min-height: 10%;
+color:#FFFFFF;
+opacity:0.7;
+background: #000000;
+flex: 2 1 10%;/* Shorthand property specifying flex-grow, flex-shrink, and flex-basis. */
+margin: .15%;
+padding: 1%;
+font-family: font7;
+font-size: 18px;
+}
+.main_content details{
+font-family:font10;
+font-size: 15px;
+}
+#menu li{
+list-style:none;
+background:#ffffff;
+border-style: solid;
+border-color: #000;
+border-width:1px;
+margin: 5%;
+padding: 1%;
+border-radius:.5em;
+}
+#shop{
+font-family:font3;
+color:#ffffff;
+font-size:20px;
+}
+li a{
+text-decoration:none;
+color:#9D1309;
+font-family:font5;
+}
+a:hover{
+color: #EE7621;
+}
+aside {
+background-image: url(images/back2.jpg);
+flex: 1 1 10%;
+min-width: 10%;
+margin: 0;
+font-size:18px;
+padding: 1%;
+color:#cd190b;
+font-family:font8;
+text-align:left;
+}
+#video{
+font-family:font9;
+color:#e81301;
+font-size:18px;
+}
+.details,figcaption{
+font-family:font6;
+font-size: 17px;
+color: #EE7621;
+}
+#navigation li{
+list-style: none ;
+display:inline;
+
+}
+#navigation{
+background: #000000;
+padding:1px;
+font-size:20px;
+}
+#bottom p{
+color: #ffffff;
+text-align:right;
+font-weight:bold;
+}
+#bottom{
+font-family:font10;
+text-align:center;
+background-image: url(images/mtd4.jpg);
+
+margin-top:0;
+
+
+}
+
+
+/************************************************************************/
+/* When the page is resized, use the styles below. Notice we order items*/
+@media all and (max-width: 768px){
+#flexContainer {
+flex-flow: column wrap; /* Shorthand property specifying flex-direction and flex-wrap */
+}
+#banner{
+min-height: 5%;
+padding: 8%;
+}
+
+#shop{
+margin-top: -20%;
+}
+#menu {
+min-height: 65%;
+order: 1;
+}
+aside {
+min-height: 65%;
+padding-left: 15%;
+order: 3;
+}
+#video{
+font-size: .8em;
+}
+.main_content {
+min-height: 65%;
+font-size: .8em;
+order: 2;
+}
+ #bottom {
+order: 4;
+min-height: 5%;
+padding: 1%;
+font-size: .8em;
+}
+iframe, img{
+width:90%;
+height: 50%;
+}
+#navigation a
+{
+color:#FF8C00 !important ;
+font-size: .6em; 
+}
+}
